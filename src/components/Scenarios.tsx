@@ -31,7 +31,7 @@ export function Scenarios() {
   return (
     <Section
       id="scenarios"
-      index="02"
+      index="03"
       kicker="Scenario explorer"
       title="Four futures, one toy model"
       lede="Move the drivers. The leading scenario changes because the weights change, not because the future has been revealed. A margin under five points is marked contested."
@@ -168,6 +168,10 @@ export function Scenarios() {
               </div>
               <p className="mt-2 text-sm text-cyan">{essay.line}</p>
               <p className="mt-3 text-sm text-muted">{essay.path}</p>
+              <p className="mt-3 text-sm text-text/90">
+                <span className="text-cyan">The balance sheet. </span>
+                {essay.capital}
+              </p>
               <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-muted">
                 {essay.how.map((point) => (
                   <li key={point}>{point}</li>

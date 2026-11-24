@@ -1,3 +1,4 @@
+import { Capital } from "./components/Capital.tsx";
 import { Countries } from "./components/Countries.tsx";
 import { Hero } from "./components/Hero.tsx";
 import { Scenarios } from "./components/Scenarios.tsx";
@@ -16,6 +17,7 @@ export default function App() {
       <main>
         <Hero />
         <Thesis />
+        <Capital />
         <Scenarios />
         <Timeline />
         <Technologies />

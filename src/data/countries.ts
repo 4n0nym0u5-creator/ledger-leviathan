@@ -17,6 +17,7 @@ export type Country = {
   citizens: string;
   jobs: string;
   economy: string;
+  capital: string;
 };
 
 export const rubric = {
@@ -60,6 +61,8 @@ export const countries: Country[] = [
       "Professional services, software, finance operations and parts of the public service feel price pressure first. Care, trades and on-site work later. Migration settings and the university sector matter as much as the model, because they decide who is in the labour pool while the task mix shifts.",
     economy:
       "The macro exposure is terms of trade, housing credit and whether minerals are processed here. Crypto is a market-conduct issue, not a GDP issue, at 2026 scale. AI is a productivity maybe, and a distributional certainty: some margins compress. A national plan that waits for fusion, a retail CBDC, or a sovereign model is a plan that is not choosing.",
+    capital:
+      "Australia does not own the models. It is being paid to host them. Amazon said in June 2025 it would invest A$20 billion in local data-centre infrastructure from 2025 to 2029. Microsoft said in April 2026 it would put A$25 billion of capital and operating expenditure into Australian digital infrastructure by the end of 2029, beside a memorandum on the government’s data-centre expectations. NEXTDC, the listed landlord, reported FY26 revenue of A$497 million and capital expenditure of A$3.4 billion, with a 565 MW forward order book. The buildings can be Australian. The chips, the weights and most of the profit are not. Super, A$4.77 trillion, and the Future Fund, A$289.7 billion at 30 June 2026, are how the public balance sheet can hold the foreign equity. That hedges a falling labour share. It does not collect company tax on profit booked somewhere else, and electricity is the political constraint.",
   },
   {
     id: "sg",
@@ -94,6 +97,8 @@ export const countries: Country[] = [
       "Finance, compliance, and the professional services around a hub do well if the hub keeps the corridors. Routine operations inside banks are exposed to agents. The city still needs people who can be responsible managers under the MAS guidelines. That is a labour market for judgement and for people who will sign.",
     economy:
       "The bet is intermediation: tokenised assets, wealth, trade finance, and a clean regulatory brand. It pays while the world is fragmented but not broken. It pays less if US and Chinese stacks stop touching, or if a scandal makes ‘licensed in Singapore’ look like a rubber stamp. The September 2026 stablecoin paper is written to avoid the rubber stamp.",
+    capital:
+      "Singapore is a price-maker in licensing and a price-taker in compute. Wealth managed in the city already owns the US equity. The city does not own a frontier lab, a chip fab, or the power a training run consumes. Its risk is a corridor: export controls or a China split that decides which clouds may train, while the legal brand stays excellent and the megawatts do not. Being the hub next to the build is not the same as being the build.",
   },
   {
     id: "us",
@@ -128,6 +133,8 @@ export const countries: Country[] = [
       "The labour shock is earliest here, because adoption is earliest. It is also where the new firms hire. Net effects will be argued with statistics for a decade. The distributional pattern to expect is strong demand for people who can evaluate and be liable, and weaker pricing for undifferentiated production.",
     economy:
       "The US captures the rents: chips, models, app stores, dollar stablecoin reserves parked in Treasuries. GENIUS, if it works, deepens that by turning a crypto product into demand for US government debt. The risk to the model is political dysfunction large enough to scare the Treasury market, which would dwarf anything Ethereum can do.",
+    capital:
+      "This is where the capital is incorporated. The 2026 capex guidance of Amazon, Alphabet, Microsoft and Meta, at the midpoint, is about US$730 billion in one year — near three-quarters of SIPRI’s US$954 billion US military figure for 2025, and more than a third of Australia’s entire projected GDP. Nvidia’s fiscal-2026 revenue was US$216 billion. SpaceX’s June 2026 listing, at a US$1.78 trillion offer value, put launch, Starlink, xAI and X in one public company. The US state is the home regulator, the export-control authority, and a customer. Antitrust and procurement are the tools. As of this briefing they have not reversed the build. Concentration is the American vulnerability that the rest of the world then imports.",
   },
   {
     id: "uk",
@@ -141,10 +148,10 @@ export const countries: Country[] = [
     crypto:
       "The Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 were made on 4 February 2026. The FCA’s new regime is expected to start on 25 October 2027. On 30 June 2026 the FCA published final rules, including admissions and disclosures and a market-abuse regime for cryptoassets, after several years of discussion papers. Until then the live perimeter is anti-money-laundering registration and the financial-promotions rules. The design intent is ‘same risk, same regulatory outcome’, with the FCA candid that crypto markets will remain higher risk than established markets. This is absorption by the conduct regulator, on a published clock.",
     ai:
-      "There is still no UK AI Act. The Commons Library describes a sector-by-sector approach: existing regulators apply five cross-cutting principles from the 2023 white paper — safety, transparency, fairness, accountability, contestability. The Labour government signalled binding duties for the most powerful models and had not, by late 2026, introduced that bill. The January 2025 AI Opportunities Action Plan is an adoption and capacity plan. The FCA has been explicit: it will not write extra AI rules, and will use the Consumer Duty, the Senior Managers and Certification Regime, and operational resilience instead. The Online Safety Act gives Ofcom a role over online services, including AI chatbots. The AI Safety Institute remains the technical body.",
+      "There is still no UK AI Act. The Commons Library describes a sector-by-sector approach: existing regulators apply five cross-cutting principles from the 2023 white paper — safety, transparency, fairness, accountability, contestability. The Labour government signalled binding duties for the most powerful models and had not, by late 2026, introduced that bill. The January 2025 AI Opportunities Action Plan is an adoption and capacity plan. The FCA has been explicit: it will not write extra AI rules, and will use the Consumer Duty, the Senior Managers and Certification Regime, and operational resilience instead. The Online Safety Act gives Ofcom a role over online services, including AI chatbots. The AI Security Institute — renamed from the AI Safety Institute on 14 February 2025 — remains the technical body. It evaluates. It does not own a hyperscaler.",
     strengths: [
       "London’s markets, English law, and a regulator that publishes a clock.",
-      "The AI Safety Institute’s evaluation role, which is influence without a giant domestic lab sector.",
+      "The AI Security Institute’s evaluation role, which is influence without a giant domestic lab sector.",
       "Common-law flexibility. Duties can be hung on senior managers without a new omnibus statute.",
       "A political consensus, so far, that consumer crypto needs conduct rules rather than a ban.",
     ],
@@ -162,6 +169,8 @@ export const countries: Country[] = [
       "Legal, financial and creative work in London is exposed to the same draft-compression as Sydney, with a deeper market and more global clients. The senior-manager regime creates a compliance labour demand that pure technology firms sometimes underestimate. Being the person who signs is a job.",
     economy:
       "The economic upside is keeping listings, tokenised funds and dispute resolution. The downside is a rentier financial sector plus an AI productivity disappointment if adoption stays a pilot. Nothing in the UK crypto regime changes the country’s growth problem by itself. It stops one kind of scandal.",
+    capital:
+      "The UK writes rules and evaluations for rents that accrue in the United States. The AI Security Institute is influence without the balance sheet: it can test a model Anthropic or another lab agrees to show it, and it cannot order a gigawatt. London can list a firm, sue a firm, and still watch the next laboratory leave. Sterling is not the unit the capex is funded in. The risk is careful irrelevance.",
   },
   {
     id: "th",
@@ -196,13 +205,15 @@ export const countries: Country[] = [
       "Tourism, hospitality and back-office services are the exposed and the benefiting sectors. Agent tools in English and Chinese change call centres and content shops. The licensed crypto industry is a small employer next to tourism. A payment sandbox does not employ a generation. An education system that can produce engineers and supervisors would.",
     economy:
       "The economic logic of the sandbox is visitor spend, recorded in baht, inside AMLO’s field of view. The tax exemption is meant to pull trading onshore and, on the government’s own telling, still raise other revenue. The macro risk is reputational: one laundering case can shut the experiment and tax the rest of the digital economy with it. That is a higher-stakes sandbox than Project Acacia, which used wholesale participants who already had regulators.",
+    capital:
+      "Microsoft said on 31 March 2026 it plans more than US$1 billion in Thai cloud and AI infrastructure and operations from 2026 to 2028, with Gulf, AIS, CP and True, after a meeting with the prime minister. Against an IMF-projected GDP of about US$599 billion, that is visible capital and still a customer relationship. Thailand gets a region, a skills promise and a dependency. It does not get a vote on the weights. The pattern matches the crypto sandbox: plug into someone else’s rail, and keep the ministry in the room.",
   },
 ];
 
 export const meansForYou = [
   {
     title: "Super",
-    body: "The system, not the token, is the retirement plan. APRA measured A$4.77 trillion in super at 30 June 2026, including A$1.11 trillion in SMSFs. The guarantee has been 12% since 1 July 2025, and from 1 July 2026 employers pay it with payday, not as a quarterly afterthought. APRA funds will touch tokenisation only inside custody, mandate and liquidity rules. An SMSF can hold crypto, and concentration plus ATO compliance is the actual risk. Nothing in the agent stack changes preservation age. This is structure, not a contribution strategy.",
+    body: "The system, not the token, is the retirement plan. APRA measured A$4.77 trillion in super at 30 June 2026, including A$1.11 trillion in SMSFs. The guarantee has been 12% since 1 July 2025, and from 1 July 2026 employers pay it with payday, not as a quarterly afterthought. The Future Fund, a different pool, stood at A$289.7 billion the same day. Both already hold global equity, which is how Australian savings own a slice of the firms spending the AI capex. That is a hedge if wages compress and profits do not. It is not a reason to concentrate a fund in one laboratory, and it is not a contribution strategy. APRA funds will touch tokenisation only inside custody, mandate and liquidity rules. An SMSF can hold crypto, and concentration plus ATO compliance is the actual risk. Nothing in the agent stack changes preservation age.",
   },
   {
     title: "Property",

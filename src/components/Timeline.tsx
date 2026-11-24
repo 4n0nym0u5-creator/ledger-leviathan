@@ -20,7 +20,7 @@ export function Timeline() {
   return (
     <Section
       id="timeline"
-      index="03"
+      index="04"
       kicker="Timeline"
       title="2026 to 2050, with the confidence attached"
       lede="The early years are mostly statutes and market structure. Confidence falls on purpose. A milestone tagged speculation is a conditional, not a plan."

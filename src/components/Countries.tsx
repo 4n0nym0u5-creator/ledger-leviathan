@@ -16,7 +16,7 @@ export function Countries() {
   return (
     <Section
       id="countries"
-      index="06"
+      index="07"
       kicker="Country deep dives"
       title="Five jurisdictions, not a world tour"
       lede="Australia, Singapore, the United States, the United Kingdom and Thailand are writing different perimeters in the same decade. Scores are judgements. The prose is the evidence."
@@ -175,6 +175,7 @@ export function Countries() {
           <Field title="Crypto and money, 2025–26" body={country.crypto} />
           <Field title="AI stance, 2025–26" body={country.ai} />
         </div>
+        <Field title="Where the capital sits" body={country.capital} />
         <div className="mt-5 grid gap-5 md:grid-cols-2">
           <List title="Strengths" items={country.strengths} />
           <List title="Vulnerabilities" items={country.vulnerabilities} />

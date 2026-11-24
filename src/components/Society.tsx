@@ -16,7 +16,7 @@ export function Society() {
   return (
     <Section
       id="society"
-      index="05"
+      index="06"
       kicker="Society"
       title="What actually changes for people"
       lede="The grid is an editorial judgement of when each pressure becomes hard to ignore. It is not a dataset. Select a row to read the argument, including the Australian cut."

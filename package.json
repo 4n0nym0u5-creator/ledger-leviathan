@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview --host 0.0.0.0 --port 43123",
-    "check:model": "node --experimental-strip-types --disable-warning=ExperimentalWarning src/lib/scenarioModel.test.ts"
+    "check:model": "node --experimental-strip-types --disable-warning=ExperimentalWarning src/lib/scenarioModel.test.ts && node --experimental-strip-types --disable-warning=ExperimentalWarning src/lib/capitalModel.test.ts"
   },
   "dependencies": {
     "react": "^19.3.1",

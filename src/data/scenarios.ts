@@ -5,6 +5,7 @@ export type ScenarioEssay = {
   name: string;
   line: string;
   path: string;
+  capital: string;
   how: string[];
   fails: string;
   watch: string;
@@ -16,6 +17,8 @@ export const essays: ScenarioEssay[] = [
     name: "State Absorbs",
     line: "Governments co-opt the rails and put the agents to work inside the perimeter.",
     path: "Stablecoins become a regulated dollar product. Tokenised deposits and, in places, a wholesale CBDC do the settlement work that crypto marketing claimed for itself. Exchanges and custodians hold AFSL-style licences or their local equivalent. AI agents draft, reconcile and monitor inside banks, the ATO, insurers and large firms, with a named senior manager still on the hook. Self-custody stays legal and culturally loud, and economically small next to super, deposits and wages.",
+    capital:
+      "The hyperscalers stay private and become regulated utilities in practice: audited, resident where the state insists, and still owned by their shareholders. Absorption here is not the state building the model. It is the state licensing the firm that did, and taxing what it can reach. Super and a sovereign fund own a slice of the equity. They do not run the training run.",
     how: [
       "Licensing is enforced against custodians and fiat edges, and the major venues stay onshore rather than geofencing the country away.",
       "Banks ship tokenised deposits that are good enough for treasurers, so open stablecoins do not become the default business rail.",
@@ -32,6 +35,8 @@ export const essays: ScenarioEssay[] = [
     name: "Network States & Parallel Systems",
     line: "A second stack settles, pays and organises, without becoming a country.",
     path: "Regulated finance continues for mortgages, super and payroll. Beside it, a meaningful layer of stablecoin settlement and agent-to-agent payment serves cross-border trade, online services and people who do not trust local banks. ‘Network state’ is the slogan. The substance is narrower: clubs, companies and protocols with money and membership, still dependent on some state’s fibre, courts and food. A few charter-city or special-zone experiments matter as policy labs. They do not field a navy.",
+    capital:
+      "Parallel money does not, by itself, parallelise a data centre. This scenario only bites the AI conglomerates if open models and more than one cloud keep the rents contestable, and if a public chain is where agents settle outside the vendor’s ledger. A charter city that buys Starlink and rents GPUs is a tenant, not a counterweight.",
     how: [
       "Open crypto use rises after licensing, instead of being domesticated by it.",
       "Agents pay for APIs, ads and compute in stablecoins as a normal business practice, not a demo.",
@@ -48,6 +53,8 @@ export const essays: ScenarioEssay[] = [
     name: "Digital Authoritarian Fortress",
     line: "Blocs treat compute, identity and money as security infrastructure.",
     path: "AI is licensed, logged and aimed at administration and security. Identity is device-bound. Money inside the bloc is a supervised pipe: a CBDC or a permitted stablecoin with holding limits and a kill switch available, whether or not it is used every day. Open wallets and privacy tools are pushed out of app stores. Cross-border model access is limited by chip export rules, cloud regions and procurement bans. Liberal democracies can build a softer version of the same fortress without calling it that: safety duties, client-side scanning, and banking exclusion.",
+    capital:
+      "The fortress can be public or it can be a national champion. Export controls, a sovereign model, and a ban on foreign weights are the state version. A single domestic conglomerate granted the monopoly in the name of security is the corporate version, and it looks like fusion from the inside. Starlink’s disputed speed cap in Ukraine in October 2026 is the small, already-happened version: a private switch on a public war.",
     how: [
       "AI becomes good enough to review everyone, not just to draft emails.",
       "Fragmentation gives each bloc a reason to stop recognising the other’s identity and money.",
@@ -64,6 +71,8 @@ export const essays: ScenarioEssay[] = [
     name: "Hybrid Pluralism",
     line: "No stack wins. The boring middle is the live one.",
     path: "Banks issue tokenised deposits. A short list of regulated stablecoins handles part of cross-border and on-chain settlement. Agents work inside spending limits, and a human or a company is still the legal person when money moves. Self-custody remains a real subculture and a real tool for dissidents, treasurers in weak-currency countries, and a minority of investors. Courts keep enforcing against people. Published code is mostly left alone. Welfare and schools creak under the labour shock and do not collapse. This is not a utopia. It is a pile of compromises that all remain visible at once.",
+    capital:
+      "Hybrid is the uncomfortable 2026 path scaled up: a few firms spend like defence ministries, competition law trims rather than nationalises, and states host the buildings. Labour’s share gives way slowly. Tax shifts toward consumption, land and resource rents where politics allows, and toward wages where it does not. ETH stays a side rail with a real niche, not the new fiscal constitution.",
     how: [
       "AI improves fast enough to change work, and not so fast that institutions cannot rewrite job design, tax and professional duty.",
       "Crypto is large enough to regulate and too useful to ban, and not large enough to replace deposits.",

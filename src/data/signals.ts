@@ -135,6 +135,42 @@ export const signals: Signal[] = [
     ifItMoves:
       "If that distinction holds in more than one jurisdiction, parallel code can exist while harmful businesses stay chargeable. If legislatures close the distinction by making publication itself the offence, the fortress score should rise.",
   },
+  {
+    id: "sig-capex",
+    scenario: "absorb",
+    title: "The capex is built, and the state only hosts it",
+    reading:
+      "Late 2026 guidance from Amazon, Alphabet, Microsoft and Meta sums to roughly US$720–740 billion for the year, on mixed definitions. Australia and Thailand have announcements, not the weights. Oracle’s separate fiscal-2027 plan is another US$90–95 billion, not in that sum.",
+    ifItMoves:
+      "Absorption of the firms, rather than of crypto, strengthens if the buildings are delivered under local energy and security conditions and the profits stay taxable or at least ownable through super and public funds. It weakens if the announcements slip and the compute is simply reserved for the sponsor’s own models.",
+  },
+  {
+    id: "sig-switch",
+    scenario: "fortress",
+    title: "A single vendor flips a switch a state depends on",
+    reading:
+      "Ukraine’s October 2026 Starshield speed cap was real, short, and disputed: officials did not agree whether SpaceX or a government ordered it. Service came back. The constellation did not become Ukrainian.",
+    ifItMoves:
+      "A second episode, in a war or in a civilian network, where a contractor cuts or geofences a service and the customer cannot route around it, is the fortress-or-feudal signal. A procurement audit that shows the state can switch is the opposite.",
+  },
+  {
+    id: "sig-open-weights",
+    scenario: "parallel",
+    title: "Frontier-quality models that are not one firm’s API",
+    reading:
+      "In 2026 a developer can call a closed frontier model and can run a smaller open one. The capex that trains the very top sits with a few balance sheets. Open weights exist. They are not the 2026 training run.",
+    ifItMoves:
+      "Parallel systems, and the case for ETH as a neutral rail, strengthen if serious work can move off a single vendor’s agents and still settle. They weaken if the only capable agents live inside one conglomerate’s cloud, identity and coin.",
+  },
+  {
+    id: "sig-remedy",
+    scenario: "hybrid",
+    title: "A competition remedy that changes structure",
+    reading:
+      "Export controls and competition cases are live. Fines and conduct promises are the usual result. A structural remedy — a forced split of cloud and model, a public-compute utility, a windfall tax that is actually collected — is not the 2026 outcome in the countries in this briefing.",
+    ifItMoves:
+      "Hybrid holds if remedies keep more than one supplier and leave a person accountable. Nationalisation or a sole-source national champion is a different scenario, even if the press release says ‘sovereign AI’.",
+  },
 ];
 
 export const doNotWatch = [
@@ -142,4 +178,5 @@ export const doNotWatch = [
   "A minister’s adjective. ‘World-leading’ and ‘crackdown’ have described the same bill.",
   "A demo of an agent buying a coffee. Look for repeat spend, a legal entity, and a loss when the payment bugs hit.",
   "Follower counts of anyone selling a network state. Look for who provides the water, the court and the fibre.",
+  "A headline that a company’s market cap is ‘bigger than Australia’. A stock of expected profits is not a year of national output, and it cannot run a hospital.",
 ];

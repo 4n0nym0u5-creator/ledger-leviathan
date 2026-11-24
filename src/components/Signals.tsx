@@ -12,7 +12,7 @@ export function Signals() {
   return (
     <Section
       id="signals"
-      index="07"
+      index="08"
       kicker="What to watch"
       title="Indicators, not oracles"
       lede="Each signal has a late-2026 reading and the move that would actually change the scenario weights. Prices are not on the list."

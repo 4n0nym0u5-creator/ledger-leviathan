@@ -28,7 +28,7 @@ export function Technologies() {
   return (
     <Section
       id="technologies"
-      index="04"
+      index="05"
       kicker="Other technologies"
       title="The rest of the stack"
       lede="Crypto and agents are not the only forces that move state power. Most of these cut both ways. The state that can permit, insure and defend a technology usually gains from it."

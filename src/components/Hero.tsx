@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const jumps = [
   { href: "#thesis", label: "The thesis" },
+  { href: "#capital", label: "The capital question" },
   { href: "#scenarios", label: "Scenarios" },
   { href: "#countries", label: "Five countries" },
   { href: "#for-you", label: "If you are in Sydney" },
@@ -77,7 +78,7 @@ export function Hero() {
             </li>
           </ul>
           <p className="mt-4 border-t border-line pt-4 text-sm text-faint">
-            Not financial, legal or tax advice. Sources checked 23 November 2026. Stablecoin figures move daily.
+            Not financial, legal or tax advice. Sources checked through 24 November 2026. Stablecoin figures and market caps move daily.
           </p>
         </aside>
       </div>

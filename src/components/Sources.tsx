@@ -15,7 +15,7 @@ export function Sources() {
   return (
     <Section
       id="sources"
-      index="08"
+      index="09"
       kicker="Sources"
       title="What the claims are hanging from"
       lede="Primary pages where they exist. Market figures are a single day. A law firm note is used only where it reports a published Thai tax measure. Nothing here is a recommendation to buy, sell, or structure a business a particular way."

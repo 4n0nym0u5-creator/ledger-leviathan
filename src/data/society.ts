@@ -24,7 +24,7 @@ export const societyTopics: SocietyTopic[] = [
   {
     id: "society-inequality",
     title: "Inequality",
-    now: "Model rents, chip rents and housing rents accrue to people who already own capital or a scarce licence to practise. Crypto wealth is concentrated and volatile; it is a poor picture of Australian inequality next to housing and super. AI tools are unusually cheap at the point of use, which cuts against a simple ‘only the rich get the tech’ story, and the gains still pool where distribution and capital sit.",
+    now: "Model rents, chip rents and housing rents accrue to people who already own capital or a scarce licence to practise. The 2026 capex plans of four US firms, about US$730 billion at the midpoint, are the industrial version of that sentence. Crypto wealth is concentrated and volatile; it is a poor picture of Australian inequality next to housing and super. AI tools are unusually cheap at the point of use, which cuts against a simple ‘only the rich get the tech’ story, and the gains still pool where distribution and capital sit.",
     later: "The open question is whether a solo operator with agents can take surplus that used to require a firm, or whether distribution platforms take it instead. Both can be true in different markets. Token incentives do not fix a housing market.",
     australia:
       "The binding Australian inequality machine is housing and the tax treatment around it, plus who captures super contributions. Technology adds a wedge inside cognitive work. It does not replace the wedge between a household that owns a Sydney dwelling and one that rents one.",

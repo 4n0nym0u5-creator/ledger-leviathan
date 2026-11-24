@@ -77,6 +77,16 @@ export const years: TimelineYear[] = [
         stance: "Observed",
       },
       {
+        id: "y26-capex",
+        domain: "AI",
+        title: "Four firms’ 2026 capex plans sit next to defence budgets",
+        body: "In late October 2026 Amazon guided to about US$220 billion of cash capex, Alphabet held US$195–205 billion, Microsoft cut its calendar-year figure to about US$170 billion, and Meta set US$135–145 billion. The midpoint is about US$730 billion, on definitions that are not identical and that are not ‘AI only’. Nvidia’s fiscal year ended 25 January 2026 was US$215.9 billion of revenue, US$193.7 billion of it in the data centre. SpaceX listed on 12 June 2026 at a US$1.78 trillion offer valuation after taking in xAI. SIPRI put 2025 US military expenditure at US$954 billion and Australia’s at US$35.3 billion.",
+        impact:
+          "The state is already a customer and a host of infrastructure it does not own. That is a different challenge from a stablecoin, and it does not require AGI. A market cap is still not a GDP.",
+        confidence: "High",
+        stance: "Observed",
+      },
+      {
         id: "y26-hubs",
         domain: "State",
         title: "Singapore, the UK and Thailand write different perimeters",
@@ -131,6 +141,16 @@ export const years: TimelineYear[] = [
         body: "Project Acacia’s finding was that tokenised assets plus digital money can tighten wholesale settlement, and that a lot of the gain does not even require a new public token. Retail CBDCs remain politically hard in Australia, the US and the UK because deposits and card schemes already work and privacy fears are sticky.",
         impact:
           "Cheaper market plumbing is a productivity story. It is not a story about the government programming your grocery spend, unless a later design chooses that.",
+        confidence: "Medium",
+        stance: "Inference",
+      },
+      {
+        id: "y30-host",
+        domain: "State",
+        title: "Host countries have the buildings, not the weights",
+        body: "Amazon’s June 2025 plan was A$20 billion for Australian data centres through 2029. Microsoft’s April 2026 plan was A$25 billion of capital and operating spend in Australia by the end of 2029, and more than US$1 billion in Thailand from 2026 to 2028. If those programs are built, Canberra and Bangkok are landlords and anchor customers. The model weights, the chip supply and most of the profit stay with the sponsor. Power and water, not a white paper, are what limit the next announcement.",
+        impact:
+          "A local region is resilience for data residency and a dependency for everything else. Switching clouds is a multi-year procurement, not a setting.",
         confidence: "Medium",
         stance: "Inference",
       },
@@ -211,6 +231,16 @@ export const years: TimelineYear[] = [
       "Scenario territory. The useful question is which state functions got stronger, and which tax bases got thinner. Point forecasts for 2040 are costume jewellery.",
     items: [
       {
+        id: "y40-rents",
+        domain: "AI",
+        title: "The political fight is over rents, if the capex paid off",
+        body: "Conditional on the machines actually doing a large share of cognitive work: labour’s share of income, already 52.4% of global GDP in the ILO’s 2024 estimate, falls faster, and the surplus sits with the owners of compute. States that can tax consumption, land, resources and the equity — Australia’s super system and the Future Fund are the local mechanisms — fund themselves differently from states that only tax wages. States that cannot reach the profit fund themselves worse. Nationalisation, a windfall tax and public compute are the speculative remedies. None is on the statute book in this briefing.",
+        impact:
+          "This is the capital section’s dial, pushed into a decade. It is not a claim that 2040 has been measured.",
+        confidence: "Low",
+        stance: "Speculation",
+      },
+      {
         id: "y40-capacity",
         domain: "State",
         title: "State capacity splits",
@@ -272,7 +302,7 @@ export const years: TimelineYear[] = [
         id: "y50-oligopoly",
         domain: "AI",
         title: "Concentration is the risk that ages well",
-        body: "Quantum, foundation models, advanced biotech and autonomous weapons each have a tendency to concentrate: capital, chips, data, regulation. A world in which three firms and two governments hold those levers is compatible with every scenario except a romantic reading of parallel systems. DAOs do not smelt chips.",
+        body: "The 2026 capex plans are the early evidence, not a costume. Quantum, foundation models, advanced biotech and autonomous weapons each concentrate capital, chips, data and regulation. A world in which a few firms and two governments hold those levers is compatible with absorption, a fortress, or a corporate-state fusion. It is a poor fit for a romantic reading of parallel systems. DAOs do not smelt chips, and a wallet does not generate the power the data centre consumes.",
         impact:
           "The political question is antitrust, alliances and public capability. Exit to a wallet does not answer it.",
         confidence: "Low",

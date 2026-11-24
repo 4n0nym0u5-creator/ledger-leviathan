@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const links = [
   { href: "#thesis", id: "thesis", label: "Thesis" },
+  { href: "#capital", id: "capital", label: "Capital" },
   { href: "#scenarios", id: "scenarios", label: "Scenarios" },
   { href: "#timeline", id: "timeline", label: "Timeline" },
   { href: "#technologies", id: "technologies", label: "Technologies" },
@@ -17,9 +18,16 @@ export function SiteNav() {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    const marker = 128;
     const onScroll = () => {
       const height = document.documentElement.scrollHeight - window.innerHeight;
       setProgress(height > 0 ? window.scrollY / height : 0);
+      let current = links[0].id;
+      for (const link of links) {
+        const node = document.getElementById(link.id);
+        if (node && node.getBoundingClientRect().top <= marker) current = link.id;
+      }
+      setActive(current);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -27,29 +35,18 @@ export function SiteNav() {
   }, []);
 
   useEffect(() => {
-    const nodes = links
-      .map((link) => document.getElementById(link.id))
-      .filter((node): node is HTMLElement => Boolean(node));
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries.filter((entry) => entry.isIntersecting);
-        if (visible.length === 0) return;
-        const nearest = visible.reduce(
-          (best, entry) => {
-            const distance = Math.abs(entry.boundingClientRect.top - 96);
-            return distance < best.distance ? { entry, distance } : best;
-          },
-          {
-            entry: visible[0],
-            distance: Math.abs(visible[0].boundingClientRect.top - 96),
-          },
-        );
-        if (nearest.entry.target.id) setActive(nearest.entry.target.id);
-      },
-      { rootMargin: "-30% 0px -55% 0px", threshold: [0.05, 0.2, 0.4] },
-    );
-    nodes.forEach((node) => observer.observe(node));
-    return () => observer.disconnect();
+    const go = () => {
+      const id = window.location.hash.replace("#", "");
+      const node = id ? document.getElementById(id) : null;
+      if (!node) return;
+      node.scrollIntoView();
+    };
+    const frame = window.requestAnimationFrame(go);
+    window.addEventListener("hashchange", go);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener("hashchange", go);
+    };
   }, []);
 
   return (
@@ -67,7 +64,7 @@ export function SiteNav() {
           <a href="#top" className="font-display text-lg tracking-tight text-text">
             Ledger <span className="text-cyan">&</span> Leviathan
           </a>
-          <nav className="hidden items-center gap-1 lg:flex" aria-label="Sections">
+          <nav className="hidden items-center gap-0.5 xl:flex" aria-label="Sections">
             {links.map((link) => (
               <a
                 key={link.id}
@@ -83,7 +80,7 @@ export function SiteNav() {
           </nav>
           <button
             type="button"
-            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-line px-3 text-sm text-text lg:hidden"
+            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-line px-3 text-sm text-text xl:hidden"
             aria-expanded={open}
             aria-controls="mobile-nav"
             onClick={() => setOpen((value) => !value)}
@@ -92,7 +89,7 @@ export function SiteNav() {
           </button>
         </div>
         {open ? (
-          <nav id="mobile-nav" className="border-t border-line px-4 py-3 lg:hidden" aria-label="Sections">
+          <nav id="mobile-nav" className="border-t border-line px-4 py-3 xl:hidden" aria-label="Sections">
             <ul className="grid grid-cols-2 gap-2">
               {links.map((link) => (
                 <li key={link.id}>
