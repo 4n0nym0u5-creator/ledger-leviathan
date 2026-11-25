@@ -1,0 +1,93 @@
+body.georgia-body {
+  background:
+    radial-gradient(900px 480px at 100% -10%, rgba(224, 138, 164, 0.16), transparent 55%),
+    radial-gradient(800px 520px at -10% 20%, rgba(143, 191, 168, 0.14), transparent 50%),
+    radial-gradient(700px 400px at 50% 100%, rgba(231, 161, 90, 0.1), transparent 45%),
+    #14110e;
+  color: #f4efe6;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+body.georgia-body::before {
+  display: none;
+}
+
+.georgia {
+  --paper: #f4efe6;
+  --muted: #cbbba6;
+  --faint: #a89278;
+  --apricot: #f0b56a;
+  --rose: #f0a0b8;
+  --sage: #9dceb8;
+  --line: rgba(244, 239, 230, 0.14);
+  color: var(--paper);
+}
+
+.georgia a {
+  color: var(--apricot);
+}
+
+.georgia .serif {
+  font-family: "Fraunces", Georgia, serif;
+  font-optical-sizing: auto;
+}
+
+.georgia .kicker {
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--apricot);
+}
+
+.georgia .panel {
+  background: rgba(28, 23, 18, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.georgia button,
+.georgia input {
+  font-family: inherit;
+}
+
+.georgia .choice {
+  min-height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  padding: 0.55rem 0.95rem;
+  text-align: left;
+}
+
+.georgia .choice[aria-pressed="true"] {
+  color: #1a140e;
+  background: var(--apricot);
+  border-color: var(--apricot);
+}
+
+.georgia .choice.stack {
+  border-radius: 16px;
+}
+
+.georgia input[type="range"]::-webkit-slider-thumb {
+  background: #f0b56a;
+  border-color: #2a2118;
+}
+
+.georgia input[type="range"]::-moz-range-thumb {
+  background: #f0b56a;
+  border-color: #2a2118;
+}
+
+.georgia .range {
+  accent-color: var(--apricot);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .georgia .drift {
+    animation: none;
+  }
+}

@@ -9,8 +9,12 @@ import { Sources } from "./components/Sources.tsx";
 import { Technologies } from "./components/Technologies.tsx";
 import { Thesis } from "./components/Thesis.tsx";
 import { Timeline } from "./components/Timeline.tsx";
+import { GeorgiaPage } from "./georgia/GeorgiaPage.tsx";
 
 export default function App() {
+  const path = window.location.pathname.replace(/\/$/, "");
+  if (path === "/georgia") return <GeorgiaPage />;
+
   return (
     <div id="top">
       <SiteNav />
